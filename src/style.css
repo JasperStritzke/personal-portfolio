@@ -24,6 +24,9 @@ body {
 
   margin: 0;
   padding: 0;
+}
+
+html {
   background: repeating-linear-gradient(-45deg, #273238, #273238 15px, #1d2428 2px, #273238 17px);
 }
 
@@ -100,7 +103,8 @@ div.actions {
   flex-direction: row;
   justify-content: flex-end;
 
-  width: 100%;
+  right: 0;
+  left: 0;
 }
 
 div.social {
@@ -115,7 +119,8 @@ div.social::after {
   width: 3px;
   height: 100px;
   background-color: white;
-  border-radius: 2px;
+  border-radius: 2px 2px 0 0;
+
   margin: auto;
   margin-top: -25px;
 }
@@ -146,9 +151,9 @@ div.email span {
 div.email::after {
   content: "";
   width: 3px;
-  height: 175px;
+  height: 180px;
   background-color: white;
-  border-radius: 2px;
+  border-radius: 2px 2px 0 0;
   margin: auto;
   margin-top: -25px;
 }
