@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasper Stritzke</title>
+    <script type="module" src="./src/main.ts" defer></script>
+    <style>
+      div#loader {
+        --scale: 7;
+        position: fixed;
+        top: -50vh;
+        left: -50vh;
+        transform: translate(-50%, -50%) scale(var(--scale));
+        background-color: #273238;
+
+        height: 100vh;
+        width: 100vh;
+
+        z-index: 99;
+
+        transition: all 1.2s ease-in-out;
+        border-radius: 100%;
+        aspect-ratio: 1;
+      }
+
+      p.loader-text {
+        position: fixed;
+        top: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+
+        color: white;
+
+        width: min-content;
+
+        font-size: 18px;
+        font-family: monospace;
+        font-weight: 600;
+        letter-spacing: 10px;
+
+        z-index: 100;
+      }
+    </style>
+  </head>
+  <div id="loader">
+    <p class="loader-text">Loading...</p>
+  </div>
+  <nav>
+    <p class="name">JasperStritzke</p>
+
+    <a href="#" class="link"><span class="dot">.</span>about()</a>
+    <a href="#" class="link"><span class="dot">.</span>work()</a>
+    <a href="#" class="link"><span class="dot">.</span>contact()</a>
+    <a href="#" class="link"><span class="dot">.</span>loadCV()<span class="dot">;</span></span></a>
+  </nav>
+  <div class="actions">
+    <div class="social">
+      <a href="https://github.com/JasperStritzke" target="_blank">
+        <i data-feather="github"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i data-feather="linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/jasperstrtzk/" target="_blank">
+        <i data-feather="instagram"></i>
+      </a>
+    </div>
+    <div class="email">
+      <span><a href="mailto:jasper@stritzke.info">jasper@stritzke.info<a></a>
+    </div>
+  </div>
+  <body>
+    <section class="hero">
+      <h1>Jasper Stritzke</h1>
+      <h3>Full-Stack Developer</h3>
+      <p>Im a <span id="age">??</span> years old software engineer, based in the very north of germany. Im currently working <a href="https://ondispatch.de" target="_blank">@onDispatch</a> with a focus in backend development.</p>
+    </section>
+  </body>
+</html>
